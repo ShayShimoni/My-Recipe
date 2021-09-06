@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="shays.myrecipes.ui.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="shays.myrecipes.ui.search.SearchFragment"
+        android:label="Search Recipes Online"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/onlineRecipeFragment"
+        android:name="shays.myrecipes.ui.onlinerecipe.OnlineRecipeFragment"
+        android:label="Recipe"
+        tools:layout="@layout/fragment_online_recipe" />
+    <fragment
+        android:id="@+id/myRecipeListsFragment"
+        android:name="shays.myrecipes.ui.lists.MyRecipeListsFragment"
+        android:label="My Lists"
+        tools:layout="@layout/fragment_my_recipe_lists" />
+    <fragment
+        android:id="@+id/myRecipeFragment"
+        android:name="shays.myrecipes.ui.myrecipe.MyRecipeFragment"
+        android:label="My Recipe"
+        tools:layout="@layout/fragment_my_recipe" />
+    <fragment
+        android:id="@+id/createNewRecipeFragment"
+        android:name="shays.myrecipes.ui.create.CreateNewRecipeFragment"
+        android:label="Create New Recipe"
+        tools:layout="@layout/fragment_create_new_recipe" />
+    <fragment
+        android:id="@+id/quickAnswerFragment"
+        android:name="shays.myrecipes.ui.quickanswer.QuickAnswerFragment"
+        android:label="Quick Answer"
+        tools:layout="@layout/fragment_quick_answer" />
+
+
+</navigation>
