@@ -3,8 +3,8 @@
     package="shays.myrecipes">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -12,11 +12,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MyRecipes">
+        android:theme="@style/Theme.MyRecipes"
+        android:fullBackupContent="true">
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashScreenActivity"
             android:exported="true"
-            android:label="@string/app_name"
             android:theme="@style/Theme.MyRecipes.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,6 +24,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.MyRecipes.NoActionBar">
+
+        </activity>
+
 
         <provider
             android:name="androidx.core.content.FileProvider"
@@ -35,7 +43,7 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
-        <receiver android:name=".MyInternetReceiver"/>
+        <receiver android:name=".MyInternetReceiver" />
     </application>
 
 </manifest>
